@@ -14,14 +14,11 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Screenshot
 
-![](.\screenshots\Screenshot1.png)[](.\screenshots\Screenshot2.png)
+![](.\screenshots\Screenshot.png)
 
 ## My process
 
 ### Built with
 
-- CSS and HTML.
-
-## Author
-
-- Github - [RGomesVR](https://github.com/RGomesVR)
+- CSS3.
+- HTML5.
