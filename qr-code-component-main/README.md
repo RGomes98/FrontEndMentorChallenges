@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://qr-code-component-main-rg.netlify.app/)
+- Live Site URL: [Live Site](https://qr-code-component-main-rg.netlify.app/)
 
 ## My process
 
