@@ -1,0 +1,154 @@
+/* Webpage Settings */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(217, 54%, 11%);
+}
+
+/* Headings */
+
+h3,
+.creator_wrapper span {
+  color: hsl(0, 0%, 100%);
+}
+
+/* Paragraphs and Spans */
+
+.coin_wrapper span {
+  font-size: 16px;
+}
+
+.ethereum_wrapper span {
+  font-size: 15px;
+  white-space: nowrap;
+  color: hsl(178, 100%, 50%);
+}
+
+p,
+.clock_wrapper {
+  font-size: 17px;
+  font-weight: 300;
+  color: hsl(215, 51%, 80%, 60%);
+}
+
+.creator_wrapper p,
+.creator_wrapper span {
+  font-size: 15px;
+}
+
+/* Hover States */
+
+.hover_img:hover {
+  opacity: 1;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+h3:hover,
+.creator_wrapper span:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+
+/* Card Container */
+
+.card_container {
+  width: 22.5%;
+  padding: 1.3em;
+  border-radius: 0.8em;
+  background-color: hsl(216, 50%, 16%);
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Wrapper */
+
+.image_wrapper {
+  display: flex;
+  position: relative;
+}
+
+.main_img {
+  width: 100%;
+  border-radius: 0.6em;
+}
+
+.hover_img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  border-radius: 0.6em;
+  opacity: 0;
+  background-color: hsl(178, 100%, 50%, 50%);
+}
+
+/* Info Wrapper */
+
+.info_wrapper h3 {
+  margin: 1em 0;
+  font-size: 20px;
+}
+
+.info_wrapper p {
+  margin: 0.5em 0 1.5em 0;
+}
+
+/* Coin Wrapper */
+
+.coin_wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 98%;
+  margin: 1.4em 0;
+}
+
+.coin_wrapper div {
+  display: flex;
+  align-items: center;
+}
+
+.coin_wrapper img {
+  margin-right: 0.3em;
+}
+
+/* Bar */
+
+.bar {
+  margin: 1em 0;
+  border-top: 1px hsl(215, 51%, 70%, 30%) solid;
+}
+
+/* Creator Wrapper */
+
+.creator_wrapper {
+  display: flex;
+  align-items: center;
+  padding-bottom: 0.5em;
+}
+
+.creator_wrapper img {
+  width: 11%;
+  border: 1px #fff solid;
+  border-radius: 50%;
+  margin-right: 0.9em;
+}
+
+/* Media Queries */
+
+@media (min-width: 375px) and (max-width: 425px) {
+  .card_container {
+    width: 88%;
+  }
+}
