@@ -31,18 +31,18 @@ body {
 
 p {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 15px;
   color: var(--grayish-blue);
 }
 
-h2,
-h3 {
+h1,
+h2 {
   font-size: 36px;
   font-weight: 600;
   color: var(--dark-blue);
 }
 
-.header__title--thin {
+.heading__title--thin {
   font-weight: 200;
 }
 
@@ -52,22 +52,22 @@ h3 {
   font-size: 12px;
 }
 
-.cards__types h3 {
+.cards__types h2 {
   font-size: 19px;
 }
 
-/* Header Section */
+/* Header / Heading */
 
-.header {
+.heading {
   width: 35%;
   text-align: center;
 }
 
-.header p {
+.heading p {
   margin-top: 1em;
 }
 
-/* Cards Section */
+/* Main / Cards */
 
 .cards {
   width: 85%;
@@ -86,10 +86,10 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 0.8em;
+  margin: 0.9em;
   padding: 1.6em 1.8em;
-  width: 325px;
-  height: 225px;
+  width: 330px;
+  height: 235px;
   border-top: 4px solid;
   border-radius: 0.3em 0.3em 0.5em 0.5em;
   box-shadow: 1px 10px 15px 7px var(--box-shadow-blue);
@@ -97,8 +97,7 @@ h3 {
 
 .cards__types img {
   align-self: flex-end;
-  width: 18%;
-  margin-top: 15.5%;
+  margin-top: 13%;
 }
 
 .cards__types--cyan {
@@ -124,7 +123,7 @@ h3 {
     justify-content: unset;
   }
 
-  .header {
+  .heading {
     padding-top: 5em;
   }
 
@@ -140,11 +139,11 @@ h3 {
     font-size: 13px;
   }
 
-  h2 {
+  h1 {
     font-size: 21px;
   }
 
-  .header {
+  .heading {
     width: 80%;
   }
 
@@ -154,8 +153,7 @@ h3 {
   }
 
   .cards__types img {
-    margin-top: 15.5%;
-    width: 20%;
+    margin-top: 8%;
   }
 }
 
@@ -164,11 +162,11 @@ h3 {
     font-size: 14px;
   }
 
-  h2 {
+  h1 {
     font-size: 24px;
   }
 
-  .header {
+  .heading {
     width: 80%;
   }
 
@@ -177,8 +175,7 @@ h3 {
   }
 
   .cards__types img {
-    margin-top: 17%;
-    width: 18%;
+    margin-top: 14%;
   }
 }
 
@@ -187,11 +184,11 @@ h3 {
     font-size: 14px;
   }
 
-  h2 {
+  h1 {
     font-size: 28px;
   }
 
-  .header {
+  .heading {
     width: 85%;
   }
 
@@ -200,16 +197,16 @@ h3 {
   }
 
   .cards__types img {
-    margin-top: 17%;
+    margin-top: 14%;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1439px) {
-  h2 {
+  h1 {
     font-size: 34px;
   }
 
-  .header {
+  .heading {
     width: 60%;
   }
 
@@ -218,7 +215,6 @@ h3 {
   }
   .cards__types img {
     margin-top: 17%;
-    width: 15%;
   }
   .cards__types--red img {
     margin-top: 11%;
