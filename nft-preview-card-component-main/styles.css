@@ -17,7 +17,7 @@ body {
 
 /* Headings */
 
-h3,
+h1,
 .creator_wrapper span {
   color: hsl(0, 0%, 100%);
 }
@@ -54,7 +54,7 @@ p,
   transition: 0.3s;
 }
 
-h3:hover,
+h1:hover,
 .creator_wrapper span:hover {
   cursor: pointer;
   color: hsl(178, 100%, 50%);
@@ -96,7 +96,7 @@ h3:hover,
 
 /* Info Wrapper */
 
-.info_wrapper h3 {
+.info_wrapper h1 {
   margin: 1em 0;
   font-size: 20px;
 }
