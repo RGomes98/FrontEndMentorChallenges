@@ -89,7 +89,7 @@ h2 {
   margin: 0.9em;
   padding: 1.6em 1.8em;
   width: 330px;
-  height: 250px;
+  height: 235px;
   border-top: 4px solid;
   border-radius: 0.3em 0.3em 0.5em 0.5em;
   box-shadow: 1px 10px 15px 7px var(--box-shadow-blue);
@@ -97,7 +97,7 @@ h2 {
 
 .cards__types img {
   align-self: flex-end;
-  margin-top: 18.5%;
+  margin-top: 13%;
 }
 
 .cards__types--cyan {
@@ -175,7 +175,7 @@ h2 {
   }
 
   .cards__types img {
-    margin-top: 19.5%;
+    margin-top: 14%;
   }
 }
 
@@ -197,7 +197,7 @@ h2 {
   }
 
   .cards__types img {
-    margin-top: 20%;
+    margin-top: 14%;
   }
 }
 
@@ -214,13 +214,13 @@ h2 {
     width: 400px;
   }
   .cards__types img {
-    margin-top: 21%;
+    margin-top: 17%;
   }
   .cards__types--red img {
-    margin-top: 15%;
+    margin-top: 11%;
   }
 
   .cards__types--blue img {
-    margin-top: 15%;
+    margin-top: 11%;
   }
 }
