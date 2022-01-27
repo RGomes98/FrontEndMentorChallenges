@@ -147,8 +147,26 @@ h1:hover,
 
 /* Media Queries */
 
-@media (min-width: 375px) and (max-width: 425px) {
+@media (min-width: 320px) and (max-width: 425px) {
   .card_container {
-    width: 88%;
+    width: 85%;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .card_container {
+    width: 60%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .card_container {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1339px) {
+  .card_container {
+    width: 30%;
   }
 }
