@@ -258,6 +258,7 @@ body::after {
 }
 
 .main-heading {
+  font-weight: 500;
   font-size: var(--heading-font-size);
   margin-bottom: 1.5rem;
   color: var(--main-heading-text-clr);
