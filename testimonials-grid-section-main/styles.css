@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-bold: 600;
+  --font-size: 0.813rem;
+
+  --small-heading: 1.25rem;
+  --regular-heading: 1.3rem;
+  --verified-graduate-text: 0.7rem;
+
+  --font-family: 'Barlow Semi Condensed', sans-serif;
+
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(0, 0%, 81%);
+  --moderate-violet: hsl(263, 55%, 52%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --verified-graduate-clr: hsl(217, 19%, 35%, 50%);
+  --review-paragraphs-clr: hsl(217, 19%, 35%, 70%);
+  --verified-graduate-white-clr: hsl(0, 0%, 100%, 50%);
+
+  --subtle-box-shadow: 0rem 0.188rem 0.938rem hsla(0, 0%, 0%, 0.2);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: var(--font-family);
+  background-color: var(--light-grayish-blue);
+  font-size: var(--font-size);
+}
+
+.container {
+  gap: 1.5rem 2rem;
+  width: 90%;
+  max-width: 71.875rem;
+  min-height: 63.5%;
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+}
+
+.comment-wrapper {
+  padding-block: 1.8rem;
+  padding-inline: 2.2rem;
+  box-shadow: var(--subtle-box-shadow);
+  border-radius: 0.6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-details {
+  display: flex;
+  gap: 1rem;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+}
+
+.name-wrapper {
+  gap: 0.05rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.name {
+  color: var(--white);
+}
+
+.status {
+  font-size: var(--verified-graduate-text);
+  color: var(--verified-graduate-white-clr);
+}
+
+.heading {
+  color: var(--white);
+  font-size: var(--regular-heading);
+}
+
+.text {
+  margin-top: auto;
+  line-height: 1.19rem;
+  color: var(--light-gray);
+}
+
+.container .comment-wrapper:nth-of-type(1) {
+  grid-column-start: span 2;
+  background-color: var(--moderate-violet);
+  background-image: url('images/bg-pattern-quotation.svg');
+  background-repeat: no-repeat;
+  background-position: 24rem top;
+}
+
+.container .comment-wrapper:nth-of-type(2) {
+  background-color: var(--very-dark-grayish-blue);
+}
+
+.container .comment-wrapper:nth-of-type(3) {
+  grid-row-start: span 2;
+  background-color: var(--white);
+}
+
+.container .comment-wrapper:nth-of-type(4) {
+  background-color: var(--white);
+}
+
+.container .comment-wrapper:nth-of-type(5) {
+  grid-column-start: span 2;
+  background-color: var(--very-dark-blackish-blue);
+}
+
+.container .comment-wrapper:nth-of-type(1) .profile-picture {
+  border: solid 0.125rem var(--verified-graduate-white-clr);
+}
+
+.container .comment-wrapper:nth-of-type(5) .profile-picture {
+  border: solid 0.125rem var(--moderate-violet);
+}
+
+.container .comment-wrapper:is(:nth-child(3), :nth-child(4)) .heading {
+  font-weight: var(--font-bold);
+  color: var(--very-dark-grayish-blue);
+}
+
+.container .comment-wrapper:is(:nth-child(3), :nth-child(4)) .text {
+  color: var(--review-paragraphs-clr);
+}
+
+.container .comment-wrapper:is(:nth-child(3), :nth-child(4)) .name {
+  font-weight: var(--font-bold);
+  color: var(--very-dark-grayish-blue);
+}
+
+.container .comment-wrapper:is(:nth-child(3), :nth-child(4)) .status {
+  color: var(--verified-graduate-clr);
+}
+
+@media (width <= 75rem) {
+  body {
+    height: unset;
+    padding: 6rem 0;
+    min-height: 100vh;
+  }
+
+  .container {
+    grid-template: 1fr / 1fr;
+  }
+
+  .container .comment-wrapper {
+    padding-inline: 1.96rem;
+  }
+
+  .container .comment-wrapper .heading {
+    margin-bottom: 1rem;
+    font-size: var(--small-heading);
+  }
+
+  .container .comment-wrapper:nth-of-type(1) {
+    grid-column-start: unset;
+    background-position: calc(2rem + 42vw) top;
+  }
+
+  .container .comment-wrapper:nth-of-type(3) {
+    order: 3;
+    grid-row-start: unset;
+  }
+
+  .container .comment-wrapper:nth-of-type(5) {
+    grid-column-start: unset;
+  }
+}
