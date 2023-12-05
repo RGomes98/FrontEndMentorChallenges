@@ -51,6 +51,7 @@ body {
 }
 
 .comment-wrapper {
+  gap: 1rem;
   padding-block: 1.8rem;
   padding-inline: 2.2rem;
   box-shadow: var(--subtle-box-shadow);
@@ -74,7 +75,6 @@ body {
   gap: 0.05rem;
   display: flex;
   flex-direction: column;
-  margin-bottom: 1rem;
 }
 
 .name {
