@@ -1,3 +1,3 @@
-### Front End Mentor Challenges
+### Frontend Mentor Challenges - HTML/CSS
 
-- Improve your front-end skills - [FrontEndMentor](https://www.frontendmentor.io/)
+- Improve your front-end skills - [FrontendMentor](https://www.frontendmentor.io/)
