@@ -91,7 +91,7 @@ main {
   width: 100%;
   display: flex;
   align-items: center;
-  padding-bottom: 12rem;
+  padding-bottom: 18rem;
   background-size: 100%;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -272,7 +272,7 @@ main {
 .tertiary-section {
   gap: 18rem;
   display: flex;
-  padding-block: 5rem;
+  padding-block: 6rem;
   background-color: var(--desaturated-blue);
 }
 
@@ -399,6 +399,12 @@ footer {
 .social-link:hover {
   color: var(--hover-bright-blue);
   border-color: var(--hover-bright-blue);
+}
+
+@media (max-width: 1440px) {
+  .secondary-image {
+    max-width: 600px;
+  }
 }
 
 @media (max-width: 1240px) {
