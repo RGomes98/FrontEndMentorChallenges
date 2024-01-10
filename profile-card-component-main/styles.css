@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+  --font-10: 10px;
+  --font-14: 14px;
+  --font-18: 18px;
+  --kumbh-font: 'Kumbh Sans';
+
+  --white: hsl(0, 100%, 100%);
+  --dark-cyan: hsl(185, 75%, 39%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+
+  --transparent-gray: hsla(0, 0%, 59%, 0.2);
+
+  --box-shadow: 0px 3px 15px hsla(0, 0%, 0%, 0.2);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-block: 3rem;
+  justify-content: center;
+  font-size: var(--font-18);
+  background-repeat: no-repeat;
+  background-color: var(--dark-cyan);
+  font-family: var(--kumbh-font), system-ui, sans-serif;
+  background-position: -18.5rem -30rem, calc(100vw - 45rem) 24rem;
+  background-image: url('/images/bg-pattern-top.svg'), url('/images/bg-pattern-bottom.svg');
+}
+
+.card {
+  width: 85%;
+  display: flex;
+  height: 375px;
+  max-width: 350px;
+  overflow: hidden;
+  border-radius: 1rem;
+  flex-direction: column;
+  box-shadow: var(--box-shadow);
+  background-color: var(--white);
+}
+
+.profile-picture-wrapper {
+  height: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+.card-background {
+  height: 50%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.profile-name-wrapper {
+  gap: 0.5rem;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  padding-block: 1.5rem;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.name-wrapper {
+  gap: 0.5rem;
+  display: flex;
+}
+
+.bold-text {
+  font-weight: 700;
+  color: var(--very-dark-desaturated-blue);
+}
+
+.thin-text {
+  font-weight: 400;
+  color: var(--dark-grayish-blue);
+}
+
+.city {
+  font-size: var(--font-14);
+}
+
+.profile-picture {
+  inset: 0;
+  margin: auto;
+  position: absolute;
+  border-radius: 50%;
+  object-fit: contain;
+  background-color: var(--white);
+  border: 5px solid var(--white);
+}
+
+.count-list {
+  gap: 1rem;
+  display: flex;
+  margin-top: auto;
+  list-style: none;
+  padding-inline: 2rem;
+  padding-block: 1.5rem;
+  justify-content: space-around;
+  border-top: 1px solid var(--transparent-gray);
+}
+
+.count-item {
+  gap: 0.2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.count-type {
+  letter-spacing: 2px;
+  font-size: var(--font-10);
+}
+
+@media (width <= 700px) {
+  body {
+    background-position: -46rem -40rem, calc(100vw - 17rem) 25rem;
+  }
+}
